@@ -1,0 +1,9 @@
+void float fun(double h)
+{
+  h=h*1000;
+  h=(int)h;
+  if (h%100>=5)
+    h=(h+10)/1000;
+  else
+    h=h/1000;
+ }
