@@ -1,0 +1,84 @@
+实验四 选择结构程序设计
+
+目的要求：
+1.	掌握c语言的关系运算符和关系表达式。
+2.	掌握逻辑运算符和逻辑表达式，学会表示逻辑值的方法。
+3.	熟练掌握条件语句和多分支语句，学习选择结构设计的方法及运用
+
+上机内容：
+上机题1：编写程序。
+（1）	设x，t均为int型变量，若有x=10，则执行语句“t=x&&x>10;”后，t的值为10
+（2）	设x,y,t均为int型变量，则执行语句“x=2；y=0；t=x||（y=y+1）”后，t的值为，y的值为1
+
+上机题2：输入并运行以下程序，分析程序的运行结果
+#include <iostream.h>
+Void main（）
+{
+  Int a，b；
+  Cin>>a>>b
+  If(a>b)cout<<a<<endl;
+  Else cout<<b<<endl;
+
+}
+
+上机题3：程序实现求分段函数的值，完成程序并填空。
+#include<iostream.h>
+#include<iomanip.h>
+Void main()
+{
+  Float x,y;
+  Cin>>x;
+  If(x<=-10)
+     Y=2*x;
+  Else
+     If(x<=10)
+        Y=2+x;
+  Else
+     Y=x/10;
+  Cout<<setiosflags(ios::showpoint)<<”x=”<<x<<”,”<<”y=”<<y<<endl;
+
+}
+
+上机题4：输入并运行以下程序，分析程序运行结果
+#include <iostream.h>
+Void main ()
+{
+  Int a,b,c;
+  Cin>>a>>b>>c;
+  Switch(a)
+{
+  Case1:
+  Case2:
+  Case3：cout<<b<<”+”<<c<<”=”<<b+c<<endl;
+  Case3：cout<<b<<”-”<<c<<”=”<<b-c<<endl;
+Case3：cout<<b<<”*”<<c<<”=”<<b*c<<endl;
+Case3：cout<<b<<”/”<<c<<”=”<<b/c<<endl;
+  Default: cout <<”a的值不正确!”<<endl;
+}
+}
+
+上机题5：程序实现求分段函数的值，完成程序并填空。
+#include <iostream.h>
+#include<iomanip.h>
+Void main ()
+{
+  Float x,y;
+  Int grade=0,flag=0;
+  Cin>>x;
+  If (x>-5&&x<0) grade=1;
+  If(x==0) grade=2;
+  If(x>0&&x<8) grade=3;
+  Switch(grade)
+{
+Case1:y=x-1;break;
+Case2:y=x;break;
+Case3:y=x+1;break;
+Default:cout<<”x的值超出范围”<<endl;flag=1;
+}
+If(!flag)
+  Cout<<setiosflags(ios::showpoint)<<”x=”<<x<<”,”<<”y=”<<y<<endl;
+
+}  
+
+实验心得：
+我认为比较难的的是整理思路，如何把问题细化并分解解决可以让我们更好的解决问题。
