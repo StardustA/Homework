@@ -1,0 +1,9 @@
+void sum (int t,int n)
+{
+  dobule s;
+  s=0;
+  for(t=1.t<=n,t++)
+    s=2/(t+t*t);
+  return s;
+ }
+  
