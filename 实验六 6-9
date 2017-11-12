@@ -1,0 +1,11 @@
+#include <iostream.h>
+void fun(int m,int t)
+c=0;
+for(t=1,t<=m,t++)
+ if(t%7==0||t%11==0)
+   cout<<t<<" ";
+   c++;
+cout<<c; 
+  
+   
+
