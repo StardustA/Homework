@@ -1,0 +1,68 @@
+实验六 函数 实验报告
+目的要求
+1.熟练掌握函数的定义和调用方法
+2.熟练掌握形参和实参的对应关系，以及值传递的方式
+3.熟练掌握函数嵌套和递归函数编写的规律
+4.学会全局变脸和局部变量动态变量的概念和使用方法
+
+预习内容
+1.函数定义，说明，调用
+2.形参和实参的概念和传递
+3.函数的类型和返回值的概念
+4.变量的存储形式和作用范围
+
+上机内容
+
+上机题1：输入并运行以下程序，分析程序运行结果
+#include <iostream.h>
+void print ()
+{
+  cout<<"Turbo C"<<endl;
+}
+void main ()
+{
+  void print();
+  print();
+}
+
+上机题2：输入并运行以下程序，分析结果
+#include <iostream.h>
+void main()
+{
+  int sum(int x,int y);
+  int a,b,c;
+  a=3,b=4;
+  c=sum(a,b);
+  cout<<a<<"+"<<b"="<<c<<endl;
+}
+int sum(int x,int y)
+{
+  int z;
+  z=x+y;
+  return(z);
+}
+
+上机题3：程序实现调用函数fun求平均值，将程序补充完整
+#include <iostream.h>
+void fun (int,int,int);
+void main()
+{
+  int x,y,z;
+  x=4,y=12;z=6;
+  fun (x,y,z);
+  cout<<"x="<<x<<","<<“y=”<<y<<","<<"z="<<z<<endl;
+}
+void fun(int x,int y,int z)
+{
+  int t;
+  t=(i+j+k)/3;
+  cout<<"t="<<t<<endl;
+}
+
+实验心得：
+1.将多个处理集中到一起进行时，可以使用函数这一程序的零件。返回类型，函数名，形参这三个部分决定了函数的特征。不接收参数的函数，其形参类型为void
+2.函数体是复合语句（程序快）。如果仅有函数总是用的变量，原则上应在该函数中说明和使用。
+
+
+
+
