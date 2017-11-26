@@ -1,0 +1,39 @@
+#include <iostream.h>
+void main()
+{
+  int i,j,a,b;/*i为矩阵的列数，j为矩阵的行数，a为矩阵中此元素列的参数，b为矩阵中此元素行的参数*/
+  int max,min,m,n,x,y;
+  i=0;
+  j=0;
+  x=0;
+  cout<<"请输入这个矩阵的列数和行数："；
+  cin>>i>>j;
+  int c[i][j];
+  for (a=0;a<i,a++)
+  {
+    for (b=0;b<j,b++)
+    {
+      cout<<"请输入第"<<a+1<<"列"<<b+1<<"行的数字："；
+      cin<<c[a][b];
+    }
+  }
+  for  (a=0;a<i;a++)
+  {
+    for (b=0;b<j-1;b++)
+    {  
+      min=c[a][b]<c[a][b+1]?c[a][b]:c[a][b+1];
+      n=c[a][b]<c[a][b+1]?b:b+1;
+      while(y<i)
+      {
+        max=c[y][n]>c[y+1][n]?c[y][n]:c[y+1][n];
+      }
+    }
+     if (max=min)
+     { 
+       x=1;
+       break;
+     }
+  }
+  if (x=0)
+    cout<<"此矩阵无鞍点。";
+}
