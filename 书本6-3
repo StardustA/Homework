@@ -1,0 +1,39 @@
+#include <iostream.h>
+#define number 4
+int shuru(int tensu[][])
+{
+  int i,j;
+  for (i=0;i<=3;i++)
+  {
+    for (j=0;j<=3;j++)
+    {
+      cout<<"请输入第"<<i+1<<"列"<<j+1<<"行数字";
+      cin>>tensu[i][j];
+     }
+  } 
+} 
+int sum(int tensu[][])
+{
+  int s;
+  s=0;
+  s=tensu[0][0]+tensu[0][3]+tensu[1][1]+tensu[1][2]+tensu[3][0]+tensu[2][2]+tensu[3][3]+tensu[2][1];
+  return s;
+}
+int change(int tensu[][])
+{
+  tensu[0][1]++;
+  tensu[0][2]++;
+  tensu[3][1]--;
+  tensu[3][2]--;
+  return tensu[][];
+}
+void mian()
+{
+  int a;
+  int tensu[number][number];
+  a=sum(tensu[][]);
+  cout<<a;
+  cout<<change(tensu[][]);
+}
+  
+  
