@@ -1,0 +1,32 @@
+#include <iostream.h>
+void write(int a[],int n)
+{
+  int i;
+  for(i=0;i<n;i++)
+  {
+    cout<<"请输入第"<<i+1<<"个数字"；
+    cin>>a[i];
+  }
+}
+void main()
+{
+  int a[10];
+  int n=10;
+  write(a;n);
+  int*p=a;
+  int i;
+  int temp;
+  for(i=9;i<5;i--)
+  {
+    temp=*p;
+    *p=*(p+i);
+    *(p+i)=temp;
+  }
+  for(i=0;i<n;i++)
+  {
+    cout<<a[i]<<endl;
+  }
+}
+    
+    
+  
