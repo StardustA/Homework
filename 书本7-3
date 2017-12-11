@@ -1,4 +1,13 @@
 #include <iostream.h>
+void write(int a[],int n)
+{
+  int i;
+  for(i=0;i<n;i++)
+  {
+    cout<<"请输入第"<<i+1<<"个数字"；
+    cin>>a[i];
+  }
+}
 void find(int a[],int n,int *max,int *min)
 {
   int i;
@@ -16,7 +25,7 @@ void find(int a[],int n,int *max,int *min)
 }
 void main()
 {
-  int a[10]={1,2,3,4,5,6,7,8,9,10};
+  int a[10];
   int max=0,min=0;
   int n=10;
   int i=0;
